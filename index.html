@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="outhor" content="Dhanith Irantha">
+  <meta name="discription" content="this is Dhanith Irantha's portfolio">
+  <title>Dhanith Irantha | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ========== CURSOR ========== -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ========== LOADER ========== -->
+  <div class="loader" id="loader">
+    <div class="loader-text">
+      <span>D</span><span>H</span><span>A</span><span>N</span><span>I</span><span>T</span><span>H</span>
+    </div>
+      <br>
+      <div class="loader-text">
+      <span>I</span><span>R</span><span>A</span><span>N</span><span>T</span><span>H</span><span>A</span>
+    </div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">DI<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ========== MOBILE MENU ========== -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home" class="mob-link">Home</a></li>
+      <li><a href="#about" class="mob-link">About</a></li>
+      <li><a href="#education" class="mob-link">Education</a></li>
+      <li><a href="#projects" class="mob-link">Projects</a></li>
+      <li><a href="#skills" class="mob-link">Skills</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="home">
+    <canvas id="bgCanvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-greeting reveal">Hello, I'm</p>
+      <h1 class="hero-name reveal">DHANITH<br/><span class="accent">IRANTHA</span></h1>
+      <div class="hero-roles reveal">
+        <span class="role-prefix">I'm a </span>
+        <span class="typed-text" id="typedText"></span>
+      </div>
+      <p class="hero-bio raevel">
+         Passionate <strong id="passionate">SOFTWARE ENGINEERING</strong> undergraduate
+         in university of KELANIYA with a strong foundation in programming,
+         web development, and problem-solving. Eager to apply my skills in real-world
+         projects and contribute to innovative solutions.
+      </p>
+      <div class="hero-btns reveal">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+      <div class="hero-socials reveal">
+        <a href="https://facebook.com/profile.php?id=61564989232614" target="_blank" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com/in/dhanith-irantha-a44224391/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/dhanithirantha20031217" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/dhanithirantha/?hl=en" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/DhanithIrantha" target="_blank" class="social-icon" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll Down</span>
+      <div class="scroll-arrow"></div>
+    </div>
+    <div class="hero-grid-overlay"></div>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2 class="section-title">ABOUT <span class="accent">ME</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-avatar-wrap">
+          <div class="about-avatar">
+            <div class="avatar-placeholder">
+              <span class="avatar-initials"><img src="Image/Profile_photo.jpg" alt="Dhanith Irantha" title="Dhanith Irantha" id="profile_photo" class="profile-photo"></span>
+            </div>
+            <div class="avatar-ring"></div>
+            <div class="avatar-ring ring2"></div>
+          </div>
+        </div>
+        <div class="about-text">
+          <h3>BIO</h3>
+          <p>
+            I'm <strong>Dhanith Irantha</strong>, an undergraduate student specializing in Software Engineering.
+            I'm passionate about software development, problem-solving, and building meaningful projects that 
+            create real-world impact. I continuously seek to grow my technical skills and collaborate with 
+            like-minded individuals.
+          </p>
+          <div class="bio-details">
+            <div class="bio-item"><span class="bio-label">Name</span><span class="bio-value">Dhanith Irantha</span></div>
+            <div class="bio-item"><span class="bio-label">Field</span><span class="bio-value">Software Engineering</span></div>
+            <div class="bio-item"><span class="bio-label">Location</span><span class="bio-value">Colombo, Sri Lanka</span></div>
+            <div class="bio-item"><span class="bio-label">Email</span><span class="bio-value">dhanithirantha20031217@gmail.com</span></div>
+            <div class="bio-item"><span class="bio-label">University</span><span class="bio-value">University Of Kelaniya</span></div>
+            <div class="bio-item"><span class="bio-label">School</span><span class="bio-value">D.S.Senanayake College </span></div>
+            <div class="bio-item"><span class="bio-label">Status</span><span class="bio-value"><span class="status-dot"></span> Available for Opportunities</span></div>
+          </div>
+          <a href="Downlod_fils/My CV.pdf" class="btn btn-primary" download>Download CV <i class="fas fa-download"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION SECTION ========== -->
+  <section class="section education-section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2 class="section-title">MY <span class="accent">EDUCATION</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="edu-timeline">
+
+        <!-- University -->
+        <div class="edu-card" data-delay="0">
+          <div class="edu-icon"><i class="fas fa-university"></i></div>
+          <div class="edu-body">
+            <span class="edu-badge">University</span>
+            <h3>Bachelor of Science in Software Engineering</h3>
+            <h4>University of Kelaniya</h4>
+            <p class="edu-period"><i class="fas fa-calendar-alt"></i> 2025 – Present</p>
+            <p class="edu-desc">
+              Currently pursuing BSc (Hons) in Software Engineering. Coursework includes 
+              Mobile App Development, Data Science, Web Development, Database Management, 
+              and Computer Networks.
+            </p>
+          </div>
+        </div>
+
+        <!-- A/L -->
+        <div class="edu-card" data-delay="100">
+          <div class="edu-icon"><i class="fas fa-school"></i></div>
+          <div class="edu-body">
+            <span class="edu-badge al">A/L</span>
+            <h3>G.C.E. Advanced Level</h3>
+            <h4>D.S.Senanayake College — Physical Science Stream <br> <br>I have sat for this examination twice.</h4>
+            <div>
+            <br>
+            <h4>First Attempt</h4>
+            <p class="edu-period"><i class="fas fa-calendar-alt"></i> 2022/2023</p>
+            <p class="edu-desc">
+              Completed A/L in the <strong>Physical Science</strong> stream.
+            </p>
+            <div class="edu-results">
+              <div class="result-item"><span class="subject">Combined Maths</span><span class="grade grade-c">C</span></div>
+              <div class="result-item"><span class="subject">Physics</span><span class="grade grade-b">B</span></div>
+              <div class="result-item"><span class="subject">Chemistry</span><span class="grade grade-b">B</span></div>
+              <div class="result-item"><span class="subject">Z-Score</span><span class="grade grade-z">1.1630</span></div>
+            </div>
+            </div>
+            <br>
+            <div>
+            <br>
+            <h4>Second Attempt</h4>
+            <p class="edu-period"><i class="fas fa-calendar-alt"></i> 2023/2024</p>
+            <p class="edu-desc">
+              Completed A/L in the <strong>Physical Science</strong> stream.
+            </p>
+            <div class="edu-results">
+              <div class="result-item"><span class="subject">Combined Maths</span><span class="grade grade-c">C</span></div>
+              <div class="result-item"><span class="subject">Physics</span><span class="grade grade-b">B</span></div>
+              <div class="result-item"><span class="subject">Chemistry</span><span class="grade grade-a">A</span></div>
+              <div class="result-item"><span class="subject">Z-Score</span><span class="grade grade-z">1.5033</span></div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- O/L -->
+        <div class="edu-card" data-delay="200">
+          <div class="edu-icon"><i class="fas fa-book-open"></i></div>
+          <div class="edu-body">
+            <span class="edu-badge ol">O/L</span>
+            <h3>G.C.E. Ordinary Level</h3>
+            <h4>S.T.Jhone's College</h4>
+            <p class="edu-period"><i class="fas fa-calendar-alt"></i> 2019</p>
+            <p class="edu-desc">
+              Achieved outstanding results in the G.C.E. O/L examination.
+            </p>
+            <div class="edu-results">
+              <div class="result-item"><span class="subject">Mathematics</span><span class="grade grade-a">A</span></div>
+              <div class="result-item"><span class="subject">Science</span><span class="grade grade-a">A</span></div>
+              <div class="result-item"><span class="subject">English</span><span class="grade grade-c">C</span></div>
+              <div class="result-item"><span class="subject">Sinhala</span><span class="grade grade-a">A</span></div>
+              <div class="result-item"><span class="subject">History</span><span class="grade grade-a">A</span></div>
+              <div class="result-item"><span class="subject">Buddhism</span><span class="grade grade-a">A</span></div>
+              <div class="result-item"><span class="subject">Commerce</span><span class="grade grade-a">A</span></div>
+              <div class="result-item"><span class="subject">Health</span><span class="grade grade-a">A</span></div>
+              <div class="result-item"><span class="subject">Music</span><span class="grade grade-a">A</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS SECTION ========== -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Skills &amp; <span class="accent">Expertise</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-cat">
+          <h4 class="skill-tital"><i class="fas fa-code"></i> Programming </h4>
+          <div >
+            <div class="programming"><i class="fab fa-python" class="icon"></i><span class="skill-name">Python</span></div>
+            <div class="programming"><i class="fab fa-java" class="icon"></i><span class="skill-name">Java</span></div>
+            <div class="programming"><i class="fab fa-js" class="icon"></i><span class="skill-name">JavaScript</span></div>
+            <div class="programming"><i class="fab fa-cuttlefish" class="icon"></i><span class="skill-name">C / C++</span></div>
+          </div>
+        </div>
+        
+        <div class="skill-cat">
+          <h4 class="skill-tital"><i class="fas fa-globe"></i> Web Development </h4>
+          <div >
+            <div class="programming"><i class="fab fa-html5" class="icon"></i><span class="skill-name">HTML / CSS</span></div>
+            <div class="programming"><i class="fab fa-react" class="icon"></i><span class="skill-name">React</span></div>
+            <div class="programming"><i class="fab fa-node-js" class="icon"></i><span class="skill-name">Node.js</span></div>
+            <div class="programming"><i class="fab fa-php" class="icon"></i><span class="skill-name">PHP</span></div>
+          </div>
+        </div>
+
+        <div class="skill-cat">
+          <h4 class="skill-tital"><i class="fas fa-database"></i> Database & Tools </h4>
+          <div >
+            <div class="programming"><i class="fab fa-database" class="icon"></i><span class="skill-name">MySQL</span></div>
+            <div class="programming"><i class="fab fa-database" class="icon"></i><span class="skill-name">MongoDB</span></div>
+            <div class="programming"><i class="fab fa-git" class="icon"></i><span class="skill-name">Git / GitHub</span></div>
+            <div class="programming"><i class="fab fa-linux" class="icon"></i><span class="skill-name">Linux</span></div>
+          </div>
+        </div>
+
+        <div class="skill-cat">
+          <h3><i class="fas fa-star"></i> Soft Skills</h3>
+          <div class="soft-skills">
+            <span>Team Leadership</span>
+            <span>Problem Solving</span>
+            <span>Communication</span>
+            <span>Time Management</span>
+            <span>Adaptability</span>
+            <span>Critical Thinking</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS SECTION ========== -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <h2 class="section-title">My <span class="accent">Projects</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-shopping-cart"></i></div>
+            <div class="project-links">
+              <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3>E-Commerce Platform</h3>
+          <p>A full-stack e-commerce web application with user authentication, product management, cart system, and payment integration.</p>
+          <div class="project-tags">
+            <span>React</span><span>Node.js</span><span>MongoDB</span><span>Stripe</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-tasks"></i></div>
+            <div class="project-links">
+              <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3>Student Management System</h3>
+          <p>A comprehensive system for managing student records, attendance, grades, and course enrollment for educational institutes.</p>
+          <div class="project-tags">
+            <span>Java</span><span>MySQL</span><span>JavaFX</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-brain"></i></div>
+            <div class="project-links">
+              <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3>AI Chatbot</h3>
+          <p>An intelligent chatbot using NLP techniques to answer user queries, built with Python and integrated into a web interface.</p>
+          <div class="project-tags">
+            <span>Python</span><span>Flask</span><span>NLP</span><span>API</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-mobile-alt"></i></div>
+            <div class="project-links">
+              <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3>Mobile To-Do App</h3>
+          <p>A clean and intuitive task management mobile app with reminders, categories, and progress tracking features.</p>
+          <div class="project-tags">
+            <span>Flutter</span><span>Dart</span><span>Firebase</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CERTIFICATIONS SECTION ========== -->
+  <section class="section certs-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">05</span>
+        <h2 class="section-title">Certifications &amp; <span class="accent">Achievements</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fab fa-google"></i></div>
+          <h4>Google IT Support Professional</h4>
+          <span class="cert-issuer">Google / Coursera</span>
+          <span class="cert-year">2023</span>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fab fa-python"></i></div>
+          <h4>Python for Everybody</h4>
+          <span class="cert-issuer">University of Michigan / Coursera</span>
+          <span class="cert-year">2023</span>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fab fa-aws"></i></div>
+          <h4>AWS Cloud Practitioner</h4>
+          <span class="cert-issuer">Amazon Web Services</span>
+          <span class="cert-year">2024</span>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-trophy"></i></div>
+          <h4>Hackathon Winner — RegTech 2024</h4>
+          <span class="cert-issuer">University Tech Event</span>
+          <span class="cert-year">2024</span>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+          <h4>Web Development Bootcamp</h4>
+          <span class="cert-issuer">Udemy</span>
+          <span class="cert-year">2022</span>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-medal"></i></div>
+          <h4>Best Student Project Award</h4>
+          <span class="cert-issuer">Faculty of Computing</span>
+          <span class="cert-year">2023</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">06</span>
+        <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p>I'm currently open to new opportunities, collaborations, or just a friendly chat about tech. Feel free to reach out!</p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+              <div class="ci-text">
+                <span>Email</span>
+                <a href="mailto:dhanith@email.com">dhanith@email.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon"><i class="fas fa-phone"></i></div>
+              <div class="ci-text">
+                <span>Phone</span>
+                <a href="tel:+94XXXXXXXXX">+94 XX XXX XXXX</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="ci-text">
+                <span>Location</span>
+                <span>Sri Lanka</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://facebook.com/yourprofile" target="_blank" class="soc-btn"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" class="soc-btn"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+            <a href="https://github.com/yourprofile" target="_blank" class="soc-btn"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Project Collaboration" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Hi Dhanith, I'd love to chat about..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-btn">
+            Send Message <i class="fas fa-paper-plane"></i>
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">DI<span class="dot">.</span></div>
+      <p class="footer-copy">© 2025 Dhanith Irantha. Crafted with <span class="accent">❤</span> and code.</p>
+      <div class="footer-socials">
+        <a href="https://facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+    <a href="#home" class="back-top" id="backTop"><i class="fas fa-chevron-up"></i></a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

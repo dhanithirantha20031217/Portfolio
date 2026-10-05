@@ -427,19 +427,19 @@
         <form class="contact-form" id="contactForm">
           <div class="form-group">
             <label for="name">Your Name</label>
-            <input type="text" id="name" placeholder="Full Name" required />
+            <input type="text" id="name" placeholder="Full Name" required name="username" />
           </div>
           <div class="form-group">
             <label for="email">Your Email</label>
-            <input type="email" id="email" placeholder="...@email.com" required />
+            <input type="email" id="email" placeholder="...@email.com" required name="user_email" />
           </div>
           <div class="form-group">
             <label for="subject">Subject</label>
-            <input type="text" id="subject" placeholder="Project Collaboration" />
+            <input type="text" id="subject" placeholder="Project Collaboration" name="subject" />
           </div>
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" rows="5" placeholder="Hi Dhanith, I'd love to chat about..." required></textarea>
+            <textarea id="message" rows="5" placeholder="Hi Dhanith, I'd love to chat about..." required name="message"></textarea>
           </div>
           <button type="submit" class="btn btn-primary full-btn">
             Send Message <i class="fas fa-paper-plane"></i>
@@ -468,6 +468,12 @@
     <a href="#home" class="back-top" id="backTop"><i class="fas fa-chevron-up"></i></a>
   </footer>
 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("atM_x29Fbf0ARk1rQ");
+   })();
+</script>
   <script src="script.js"></script>
 </body>
 </html>

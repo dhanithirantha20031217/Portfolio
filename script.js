@@ -250,16 +250,25 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   btn.textContent = 'Sending...';
   btn.disabled = true;
 
-  // Simulate form submission (replace with your actual backend/email API)
-  setTimeout(() => {
-    document.getElementById('formSuccess').classList.add('visible');
-    this.reset();
-    btn.innerHTML = 'Send Message <i class="fas fa-paper-plane"></i>';
-    btn.disabled = false;
-    setTimeout(() => {
-      document.getElementById('formSuccess').classList.remove('visible');
-    }, 5000);
-  }, 1500);
+  // emailjs.sendForm('SERVICE_ID', 'TEMPLATE_ID', form_element)
+  emailjs.sendForm('service_cbvq0dx', 'template_l7rqc12', this)
+    .then(function() {
+        // ඊමේල් එක සාර්ථකව යැවුණු පසු
+        document.getElementById('formSuccess').classList.add('visible');
+        document.getElementById('contactForm').reset();
+        btn.innerHTML = 'Send Message <i class="fas fa-paper-plane"></i>';
+        btn.disabled = false;
+        
+        setTimeout(() => {
+          document.getElementById('formSuccess').classList.remove('visible');
+        }, 5000);
+    }, function(error) {
+        // යම් දෝෂයක් සිදු වුවහොත්
+        console.error('FAILED...', error);
+        alert('Oops! Something went wrong. Please try again.');
+        btn.innerHTML = 'Send Message <i class="fas fa-paper-plane"></i>';
+        btn.disabled = false;
+    });
 });
 
 /* ============================================================
@@ -337,4 +346,4 @@ if (heroName) {
 }
 
 console.log('%c🚀 Portfolio by Dhanith Irantha', 'color:#00d4ff;font-size:1.2rem;font-weight:bold;');
-console.log('%c✉ Contact: dhanith@email.com', 'color:#8899aa;');
+console.log('%c✉ Contact: dhanithirantha20031217@gmail.com', 'color:#8899aa;');

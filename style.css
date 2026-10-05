@@ -248,10 +248,11 @@ ul { list-style: none; }
 }
 .hero-name {
   font-family: var(--font-head);
-  font-size: clamp(3rem, 9vw, 7rem);
+  font-size: clamp(2rem, 9vw, 7rem);
   font-weight: 800;
   line-height: 1.0;
   margin-bottom: 20px;
+  word-break: break-word;
 }
 .accent { color: var(--accent); }
 .hero-roles {
@@ -271,6 +272,7 @@ ul { list-style: none; }
   color: var(--text-dim); line-height: 1.7;
   font-size: 1rem; margin-bottom: 36px;
   max-width: 520px;
+  padding-right: 15px;
 }
 .hero-btns { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 40px; }
 .hero-socials { display: flex; gap: 16px; }
@@ -774,7 +776,7 @@ ul { list-style: none; }
   .nav-toggle { display: flex; }
 }
 @media(max-width: 600px) {
-  .hero { padding: 0 6%; }
+  .hero { padding: 0 10%; }
   .hero-btns { flex-direction: column; }
   .edu-card { flex-direction: column; }
   .section { padding: 70px 0; }

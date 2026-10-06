@@ -252,7 +252,7 @@ ul { list-style: none; }
   font-weight: 800;
   line-height: 1.0;
   margin-bottom: 20px;
-  word-break: break-word;
+  word-break: normal;
 }
 .accent { color: var(--accent); }
 .hero-roles {
